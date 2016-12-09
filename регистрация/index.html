@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="window_reg center">
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+			<span>BACKROOM</span>
+		</div>
+		<button id="sign_in" onclick="signInOpen()">Sign in</button>
+		<button id="sign_up" onclick="signUpOpen()">Sign up</button>
+
+		<div id="login">
+			Login:
+			<br>
+			<input type="text">
+			<br>
+			Password:
+			<br>
+			<input type="password" name="" id="">
+			<br>
+			<button>NEXT</button>
+			<br>
+			<a href="#">Sing up</a>
+		</div>
+
+		<div id="sign">
+			Login:
+			<br>
+			<input type="text">
+			<br>
+			Password:
+			<br>
+			<input type="password" name="" id="">
+			<br>
+			Repeat password:
+			<br>
+			<input type="password" name="" id="">
+			<br>
+			Your email
+			<br>
+			<input type="text">
+			<button>REGISTRATION</button>
+		</div>
+	</div>
+	<script>
+		function signInOpen() {
+			var login = document.getElementById('login');
+			var sign = document.getElementById('sign');
+			
+			login.style.cssText="opacity: 1; visibility: visible; transition-delay: 0s;";
+
+			sign.style.cssText="visibility: hidden; transition-delay: 0s;";
+	  	}
+
+	  	function signUpOpen() {
+			var login = document.getElementById('login');
+			var sign = document.getElementById('sign');
+
+			login.style.cssText="visibility: hidden; transition-delay: 0s;";
+
+			sign.style.cssText="opacity: 1; visibility: visible; transition-delay: 0s; margin-top: -280px;";
+
+	  	}
+
+	</script>
+</body>
+</html>
